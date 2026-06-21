@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Es Mojito Manih Sabuik — Kesegaran Tropis Premium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,700;0,800;1,600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .font-serif-brand {
+            font-family: 'Playfair Display', serif;
+        }
+        .bg-glass {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #fef08a 0%, #f0fdf4 50%, #ccfbf1 100%);
+        }
+        .product-card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .product-card:hover {
+            transform: translateY(-8px) scale(1.02);
+        }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen text-gray-800 antialiased selection:bg-emerald-200 selection:text-emerald-900">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="sticky top-0 z-50 bg-glass border-b border-emerald-100/60 shadow-md">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#beranda" class="flex items-center gap-3 active:scale-95 transition-transform">
+                <img src="logo mojito.png" alt="Logo" class="h-12 w-auto object-contain rounded-2xl shadow-md">
+                <span class="font-serif-brand font-extrabold text-2xl tracking-tight text-emerald-950 sm:text-3xl">Manih Sabuik</span>
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8 text-base font-bold text-gray-600">
+                <a href="#beranda" class="hover:text-emerald-700 transition-colors">Beranda</a>
+                <a href="#produk" class="hover:text-emerald-700 transition-colors">Menu Varian</a>
+                <a href="#testimoni" class="hover:text-emerald-700 transition-colors">Testimoni</a>
+                <a href="#kontak" class="hover:text-emerald-700 transition-colors">Kontak</a>
+            </div>
+
+            <div>
+                <a href="#produk" class="bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-extrabold px-6 py-3.5 rounded-full shadow-xl shadow-emerald-600/30 transition-all hover:scale-105 inline-block tracking-wide">
+                    Order Sekarang
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header id="beranda" class="max-w-6xl mx-auto px-6 pt-20 pb-24 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 bg-emerald-100 border-2 border-emerald-200 text-emerald-900 text-sm font-extrabold px-5 py-2 rounded-full shadow-sm animate-bounce">
+                <span class="flex h-3 w-3 rounded-full bg-emerald-500"></span> ⚡️ Promo Serba Rp 5.000 Kuliner Hits
+            </div>
+            <h1 class="font-serif-brand text-5xl sm:text-6xl lg:text-7xl font-extrabold text-emerald-950 leading-tight tracking-tight">
+                Rasakan Sensasi<br>
+                <span class="text-emerald-600 italic font-semibold drop-shadow-xs">Kesegaran Tropis</span>
+            </h1>
+            <p class="text-base sm:text-lg text-gray-700 max-w-xl leading-relaxed mx-auto lg:mx-0 font-medium">
+                Racikan es mojito premium eksklusif dari <span class="font-bold text-emerald-950">Manih Sabuik</span>. Dibuat hanya dari 100% gula murni, perasan buah asli, dan remasan daun mint segar tanpa perisa buatan. Mood booster pas buat nongkrong!
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
+                <a href="#produk" class="bg-emerald-600 hover:bg-emerald-700 text-white text-base font-bold px-10 py-4.5 rounded-2xl text-center shadow-2xl shadow-emerald-600/30 transition-all hover:-translate-y-1">
+                    Lihat Menu Varian
+                </a>
+                <a href="#rahasia" class="bg-white hover:bg-gray-50 text-gray-800 border-2 border-gray-100 text-base font-bold px-10 py-4.5 rounded-2xl text-center shadow-sm transition-all hover:-translate-y-1">
+                    Kualitas Kami
+                </a>
+            </div>
+            
+            <!-- Trust Badges -->
+            <div class="grid grid-cols-3 gap-6 pt-8 border-t-2 border-emerald-900/10 max-w-md mx-auto lg:mx-0">
+                <div>
+                    <p class="font-extrabold text-2xl text-emerald-950">4.9 ★</p>
+                    <p class="text-sm font-semibold text-gray-500 mt-0.5">Rating Pelanggan</p>
+                </div>
+                <div>
+                    <p class="font-extrabold text-2xl text-emerald-950">100%</p>
+                    <p class="text-sm font-semibold text-gray-500 mt-0.5">Buah & Mint Alami</p>
+                </div>
+                <div>
+                    <p class="font-extrabold text-2xl text-emerald-950">Premium</p>
+                    <p class="text-sm font-semibold text-gray-500 mt-0.5">Nggak Bikin Seret</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Highlight Box -->
+        <div id="rahasia" class="lg:col-span-5 bg-white border-2 border-emerald-100 p-8 rounded-3xl shadow-2xl shadow-emerald-950/5 relative overflow-hidden self-stretch flex flex-col justify-center backdrop-blur-md">
+            <div class="absolute -right-8 -bottom-8 text-9xl opacity-15 pointer-events-none select-none animate-pulse">🍃</div>
+            <h3 class="text-sm uppercase tracking-widest font-extrabold text-emerald-800 mb-4 flex items-center gap-2">
+                ✦ RAHASIA KESEGARAN UTAMA
+            </h3>
+            <p class="text-base text-gray-600 leading-relaxed font-medium">
+                Keunikan rasa <strong class="text-emerald-950 font-bold">Mojito Manih Sabuik</strong> lahir dari metode tradisional peremasan <span class="font-bold text-emerald-700">daun mint segar pilihan</span>, dikombinasikan secara presisi dengan sirup murni rahasia dapur kami serta segarnya buah asli pilihan Anda.
+            </p>
+        </div>
+    </header>
+
+    <!-- MAIN SECTION -->
+    <main class="max-w-6xl mx-auto px-6 pb-24 space-y-28">
+
+        <!-- PRODUCT SECTION -->
+        <section id="produk" class="scroll-mt-24">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6 text-center md:text-left">
+                <div>
+                    <h2 class="font-serif-brand text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">Jelajahi Varian Rasa Tropis</h2>
+                    <p class="text-base text-gray-500 mt-2 font-medium">Pilih rasa favoritmu, klik beli untuk langsung masukkan ke dalam troli.</p>
+                </div>
+                <span class="self-center md:self-auto text-sm text-emerald-900 bg-emerald-100 font-extrabold px-5 py-2.5 rounded-full border-2 border-emerald-200 shadow-sm animate-pulse">🔥 Serba Rp 5.000 Kekinian</span>
+            </div>
+            
+            <!-- Grid Katalog Produk -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Varian 1: Original -->
+                <div class="product-card bg-white p-6 rounded-3xl border-2 border-gray-100 shadow-md flex flex-col justify-between hover:shadow-2xl hover:border-emerald-300 group">
+                    <div>
+                        <div class="text-5xl bg-emerald-50 p-4 rounded-2xl group-hover:scale-110 transition-transform inline-block mb-5 shadow-inner">🍋</div>
+                        <h4 class="font-extrabold text-gray-900 text-xl group-hover:text-emerald-700 transition-colors">Original Manih Sabuik</h4>
+                        <p class="text-sm text-gray-500 mt-3 leading-relaxed font-medium">Menu signature legendaris dengan kombinasi jeruk nipis lokal melimpah, es kristal, dan kesegaran daun mint murni.</p>
+                    </div>
+                    <div class="mt-8 flex justify-between items-center pt-4 border-t border-gray-100">
+                        <span class="font-extrabold text-emerald-600 text-xl">Rp 5.000</span>
+                        <button onclick="pilihMenu('Original Manih Sabuik (Signature)')" class="bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-bold px-5 py-3 rounded-xl transition-all shadow-md shadow-emerald-600/20 cursor-pointer hover:scale-105">Beli</button>
+                    </div>
+                </div>
+
+                <!-- Varian 2: Melon -->
+                <div class="product-card bg-white p-6 rounded-3xl border-2 border-gray-100 shadow-md flex flex-col justify-between hover:shadow-2xl hover:border-emerald-300 group">
+                    <div>
+                        <div class="text-5xl bg-lime-50 p-4 rounded-2xl group-hover:scale-110 transition-transform inline-block mb-5 shadow-inner">🍈</div>
+                        <h4 class="font-extrabold text-gray-900 text-xl group-hover:text-emerald-700 transition-colors">Mojito Sweet Melon</h4>
+                        <p class="text-sm text-gray-500 mt-3 leading-relaxed font-medium">Manisnya buah melon pilihan yang harum berpadu sempurna dinginnya sodaria dan remasan daun mint segar.</p>
+                    </div>
+                    <div class="mt-8 flex justify-between items-center pt-4 border-t border-gray-100">
+                        <span class="font-extrabold text-emerald-600 text-xl">Rp 5.000</span>
+                        <button onclick="pilihMenu('Mojito Sweet Melon')" class="bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-bold px-5 py-3 rounded-xl transition-all shadow-md shadow-emerald-600/20 cursor-pointer hover:scale-105">Beli</button>
+                    </div>
+                </div>
+
+                <!-- Varian 3: Jeruk -->
+                <div class="product-card bg-white p-6 rounded-3xl border-2 border-gray-100 shadow-md flex flex-col justify-between hover:shadow-2xl hover:border-emerald-300 group">
+                    <div>
+                        <div class="text-5xl bg-amber-50 p-4 rounded-2xl group-hover:scale-110 transition-transform inline-block mb-5 shadow-inner">🍊</div>
+                        <h4 class="font-extrabold text-gray-900 text-xl group-hover:text-emerald-700 transition-colors">Mojito Citrus Orange</h4>
+                        <p class="text-sm text-gray-500 mt-3 leading-relaxed font-medium">Suntikan energi dari perasan jeruk manis alami yang kaya vitamin C, berpadu pas dengan sensasi dingin mint.</p>
+                    </div>
+                    <div class="mt-8 flex justify-between items-center pt-4 border-t border-gray-100">
+                        <span class="font-extrabold text-emerald-600 text-xl">Rp 5.000</span>
+                        <button onclick="pilihMenu('Mojito Citrus Orange')" class="bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-bold px-5 py-3 rounded-xl transition-all shadow-md shadow-emerald-600/20 cursor-pointer hover:scale-105">Beli</button>
+                    </div>
+                </div>
+
+                <!-- Varian 4: Strawberry Summer (Sesuai gambar_2.png) -->
+                <div class="product-card bg-white p-6 rounded-3xl border-2 border-gray-100 shadow-md flex flex-col justify-between hover:shadow-2xl hover:border-emerald-300 group">
+                    <div>
+                        <div class="text-5xl bg-red-50 p-4 rounded-2xl group-hover:scale-110 transition-transform inline-block mb-5 shadow-inner">🍓</div>
+                        <h4 class="font-extrabold text-gray-900 text-xl group-hover:text-emerald-700 transition-colors">Mojito Strawberry Summer</h4>
+                        <p class="text-sm text-gray-500 mt-3 leading-relaxed font-medium">Sensasi asam manis buah strawberry merah segar yang melimpah berpadu soda dingin dan daun mint.</p>
+                    </div>
+                    <div class="mt-8 flex justify-between items-center pt-4 border-t border-gray-100">
+                        <span class="font-extrabold text-emerald-600 text-xl">Rp 5.000</span>
+                        <button onclick="pilihMenu('Mojito Strawberry Summer')" class="bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-bold px-5 py-3 rounded-xl transition-all shadow-md shadow-emerald-600/20 cursor-pointer hover:scale-105">Beli</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHECKOUT FORM SECTION -->
+        <section id="formSection" class="bg-white rounded-3xl p-8 sm:p-12 shadow-2xl shadow-emerald-950/10 border-2 border-emerald-50 max-w-2xl mx-auto scroll-mt-24">
+            <div class="flex items-center justify-between border-b border-gray-100 pb-6 mb-8">
+                <h3 class="font-extrabold text-gray-950 text-xl flex items-center gap-2.5 sm:text-2xl">
+                    🛒 Troli & Detail Pesanan Kakak
+                </h3>
+                <span class="text-xs font-black text-emerald-700 bg-emerald-50 px-4 py-2 rounded-lg tracking-wider uppercase border border-emerald-100 shadow-2xs">Instant Checkout</span>
+            </div>
+            
+            <form id="orderForm" class="space-y-6">
+                <div>
+                    <label class="block text-sm font-bold text-gray-500 uppercase tracking-wider mb-2.5">Nama Lengkap Penerima</label>
+                    <input type="text" id="nama" required placeholder="Tulis nama lengkap Anda" 
+                        class="w-full px-5 py-4.5 rounded-2xl border-2 border-gray-200 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 focus:outline-none transition-all text-base bg-gray-50/50 font-semibold text-gray-900 placeholder:font-normal">
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-bold text-gray-500 uppercase tracking-wider mb-2.5">Varian Produk Terpilih</label>
+                        <input type="text" id="menuTerpilih" value="Original Manih Sabuik (Signature)" readonly
+                            class="w-full px-5 py-4.5 rounded-2xl border-2 border-emerald-100 bg-emerald-50/70 font-extrabold text-emerald-950 text-base focus:outline-none cursor-not-allowed">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-gray-500 uppercase tracking-wider mb-2.5">Kuantitas Total (Cup)</label>
+                        <div class="flex items-center justify-between bg-gray-50 border-2 border-gray-200 rounded-2xl p-2 max-w-[180px]">
+                            <button type="button" onclick="ubahJumlah(-1)" class="w-11 h-11 bg-white hover:bg-gray-100 active:scale-90 rounded-xl font-black text-gray-800 shadow-sm transition-all cursor-pointer text-lg flex items-center justify-center border border-gray-100">-</button>
+                            <input type="number" id="jumlah" value="1" min="1" readonly 
+                                class="w-12 text-center font-black text-lg bg-transparent border-none focus:outline-none text-gray-950">
+                            <button type="button" onclick="ubahJumlah(1)" class="w-11 h-11 bg-white hover:bg-gray-100 active:scale-90 rounded-xl font-black text-gray-800 shadow-sm transition-all cursor-pointer text-lg flex items-center justify-center border border-gray-100">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold text-gray-500 uppercase tracking-wider mb-2.5">Catatan Khusus (Opsional)</label>
+                    <textarea id="catatan" rows="3" placeholder="Contoh: Es dipisah, kurangi manis, tambah mint, dll..." 
+                        class="w-full px-5 py-4.5 rounded-2xl border-2 border-gray-200 focus:ring-2 focus:ring-emerald-500 focus:outline-none transition-all resize-none text-base bg-gray-50/50 font-semibold text-gray-900 placeholder:font-normal"></textarea>
+                </div>
+
+                <!-- Bagian Estimasi Total Box Dipermak Lebih Bold -->
+                <div class="bg-emerald-950 rounded-2xl p-6 flex justify-between items-center shadow-xl shadow-emerald-950/20 border-b-4 border-emerald-800">
+                    <span class="text-sm font-bold text-emerald-300 uppercase tracking-widest">Total Estimasi Pembayaran</span>
+                    <span id="totalHarga" class="text-3xl font-black text-white tracking-tight">Rp 5.000</span>
+                </div>
+
+                <button type="button" onclick="kirimWhatsApp()" 
+                    class="w-full bg-emerald-600 hover:bg-emerald-700 active:scale-[0.99] text-white font-extrabold py-5 px-6 rounded-2xl shadow-xl shadow-emerald-700/20 transition-all flex items-center justify-center gap-3 cursor-pointer text-base uppercase tracking-wide">
+                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.503-5.734-1.458L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.963C16.528 2.022 14.06 1 11.424 1 5.99 1 1.563 5.367 1.56 10.797c-.001 1.643.436 3.245 1.267 4.673l-.995 3.634 3.737-.97A9.76 9.76 0 0 0 6.647 19.15zM17.486 14.4c-.3-.15-1.774-.875-2.026-.967-.253-.092-.438-.137-.622.137-.184.274-.713.875-.874 1.058-.162.183-.323.206-.622.056-.3-.15-1.269-.467-2.417-1.485-.893-.796-1.496-1.78-1.673-2.085-.176-.304-.019-.468.13-.617.135-.134.3-.348.45-.522.151-.174.2-.298.3-.497.102-.199.05-.373-.025-.523-.075-.15-.622-1.496-.852-2.051-.225-.54-.452-.467-.623-.476l-.532-.01c-.184 0-.483.068-.736.344-.253.275-.965.943-.965 2.299 0 1.356.987 2.667 1.125 2.851.138.184 1.943 2.967 4.707 4.16.657.284 1.17.453 1.57.58.66.21 1.26.18 1.735.11.53-.078 1.774-.725 2.026-1.388.251-.664.251-1.233.176-1.351-.075-.119-.275-.194-.575-.344z"/>
+                    </svg>
+                    Kirim Format Pesanan Ke WhatsApp
+                </button>
+            </form>
+        </section>
+
+        <!-- TESTIMONIAL SECTION -->
+        <section id="testimoni" class="space-y-10 scroll-mt-24">
+            <div class="text-center">
+                <h3 class="font-serif-brand text-4xl font-extrabold text-gray-900 tracking-tight">Kesan Pertama Mereka 🤎</h3>
+                <p class="text-base text-gray-500 mt-2 font-medium">Ulasan jujur dari para penikmat setia Mojito Sabuik</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-8 rounded-3xl border-l-8 border-emerald-600 shadow-md">
+                    <p class="text-base italic text-gray-700 leading-relaxed font-medium">"Kesegarannya natural banget, rasa manis melonnya pas dan nggak bikin seret di tenggorokan. Varian Strawberry Summer-nya juga seger parah!"</p>
+                    <span class="block text-sm font-black text-emerald-800 uppercase tracking-wider mt-5">— Ziyan, Padang</span>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border-l-8 border-emerald-600 shadow-md">
+                    <p class="text-base italic text-gray-700 leading-relaxed font-medium">"Daun mint-nya melimpah ruah, rasa jeruk sitrusnya beneran dari buah asli bukan essence. Diminum pas siang bolong langsung bikin melek seharian!"</p>
+                    <span class="block text-sm font-black text-emerald-800 uppercase tracking-wider mt-5">— Farah, Padang</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT & FOOTER SECTION -->
+        <footer id="kontak" class="pt-16 border-t-2 border-emerald-100 text-center space-y-10 scroll-mt-24">
+            <div class="space-y-3">
+                <h4 class="font-serif-brand font-extrabold text-2xl text-emerald-950">Hubungi & Ikuti Media Sosial Kami</h4>
+                <p class="text-sm text-gray-500 font-medium">Dapatkan info promo menarik setiap minggunya melalui channel resmi kami.</p>
+            </div>
+            <div class="flex justify-center gap-10">
+                <a href="https://instagram.com/mojitomanihsabuik" target="_blank" class="text-gray-500 hover:text-pink-600 transition-colors text-sm font-bold flex items-center gap-1.5">Instagram</a>
+                <a href="https://tiktok.com/@mojitomanihsabuik" target="_blank" class="text-gray-500 hover:text-black transition-colors text-sm font-bold flex items-center gap-1.5">TikTok</a>
+                <a href="https://facebook.com/mojitomanihsabuik" target="_blank" class="text-gray-500 hover:text-blue-600 transition-colors text-sm font-bold flex items-center gap-1.5">Facebook</a>
+            </div>
+            <p class="text-xs text-gray-400 font-bold tracking-wider">
+                &copy; 2026 Es Mojito Manih Sabuik. All Rights Reserved.
+            </p>
+        </footer>
+
+    </main>
+
+    <!-- JAVASCRIPT LOGIC (FIXED HARGA SERBA 5000) -->
+    <script>
+        const HARGA_FIXED = 5000;
+        const NOMOR_WHATSAPP = "62838053444490"; 
+
+        function pilihMenu(namaMenu) {
+            document.getElementById('menuTerpilih').value = namaMenu;
+            
+            document.getElementById('jumlah').value = 1;
+            updateTotalHarga(1);
+            
+            document.getElementById('formSection').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function ubahJumlah(nilai) {
+            let inputJumlah = document.getElementById('jumlah');
+            let jumlahBaru = parseInt(inputJumlah.value) + nilai;
+            
+            if (jumlahBaru >= 1) {
+                inputJumlah.value = jumlahBaru;
+                updateTotalHarga(jumlahBaru);
+            }
+        }
+
+        function updateTotalHarga(jumlah) {
+            let total = jumlah * HARGA_FIXED;
+            document.getElementById('totalHarga').innerText = "Rp " + total.toLocaleString('id-ID');
+        }
+
+        function kirimWhatsApp() {
+            let nama = document.getElementById('nama').value.trim();
+            let menu = document.getElementById('menuTerpilih').value;
+            let jumlah = document.getElementById('jumlah').value;
+            let catatan = document.getElementById('catatan').value.trim();
+            let total = (jumlah * HARGA_FIXED).toLocaleString('id-ID');
+
+            if (nama === "") {
+                alert("Masukkan nama Kakak terlebih dahulu ya.");
+                document.getElementById('nama').focus();
+                return;
+            }
+
+            let teksPesan = `Halo, Admin *Mojito Manih Sabuik*!%0A` +
+                            `Saya tertarik memesan menu berikut melalui E-Commerce:%0A%0A` +
+                            `*Detail Lengkap Pesanan:*%0A` +
+                            `• Nama Pelanggan : ${nama}%0A` +
+                            `• Varian Rasa : *${menu}*%0A` +
+                            `• Jumlah : ${jumlah} Cup%0A`;
+            
+            if (catatan !== "") {
+                let boxCatatan = `• Catatan Khusus : _${catatan}_%0A`;
+                teksPesan += boxCatatan;
+            }
+            
+            teksPesan += `%0A*Total Estimasi Pembayaran : Rp ${total}*%0A%0A` +
+                         `Mohon diproses pesanannya, terima kasih banyak! ✨`;
+
+            let urlWhatsApp = `https://api.whatsapp.com/send?phone=${NOMOR_WHATSAPP}&text=${teksPesan}`;
+            window.open(urlWhatsApp, '_blank');
+        }
+    </script>
+</body>
+</html>
