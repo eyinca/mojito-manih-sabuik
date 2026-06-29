@@ -23,10 +23,10 @@
         .gradient-bg {
             background: linear-gradient(135deg, #fef08a 0%, #f0fdf4 50%, #ccfbf1 100%);
         }
-        .product-card {
+        .product-card, .promo-card {
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
-        .product-card:hover {
+        .product-card:hover, .promo-card:hover {
             transform: translateY(-8px) scale(1.02);
         }
     </style>
@@ -44,6 +44,7 @@
             <div class="hidden md:flex items-center gap-8 text-base font-bold text-gray-600">
                 <a href="#beranda" class="hover:text-emerald-700 transition-colors">Beranda</a>
                 <a href="#produk" class="hover:text-emerald-700 transition-colors">Menu Varian</a>
+                <a href="#promo" class="hover:text-emerald-700 transition-colors">Promo</a>
                 <a href="#testimoni" class="hover:text-emerald-700 transition-colors">Testimoni</a>
                 <a href="#kontak" class="hover:text-emerald-700 transition-colors">Kontak</a>
             </div>
@@ -57,7 +58,7 @@
     </nav>
 
     <!-- HERO SECTION -->
-    <header id="beranda" class="max-w-6xl mx-auto px-6 pt-20 pb-24 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+    <header id="beranda" class="max-w-6xl mx-auto px-6 pt-20 pb-20 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
             <div class="inline-flex items-center gap-2 bg-emerald-100 border-2 border-emerald-200 text-emerald-900 text-sm font-extrabold px-5 py-2 rounded-full shadow-sm animate-bounce">
                 <span class="flex h-3 w-3 rounded-full bg-emerald-500"></span> ⚡️ Promo Serba Rp 5.000 Kuliner Hits
@@ -73,8 +74,8 @@
                 <a href="#produk" class="bg-emerald-600 hover:bg-emerald-700 text-white text-base font-bold px-10 py-4.5 rounded-2xl text-center shadow-2xl shadow-emerald-600/30 transition-all hover:-translate-y-1">
                     Lihat Menu Varian
                 </a>
-                <a href="#rahasia" class="bg-white hover:bg-gray-50 text-gray-800 border-2 border-gray-100 text-base font-bold px-10 py-4.5 rounded-2xl text-center shadow-sm transition-all hover:-translate-y-1">
-                    Kualitas Kami
+                <a href="#promo" class="bg-white hover:bg-gray-50 text-gray-800 border-2 border-gray-100 text-base font-bold px-10 py-4.5 rounded-2xl text-center shadow-sm transition-all hover:-translate-y-1">
+                    Cek Promo Spesial
                 </a>
             </div>
             
@@ -96,7 +97,7 @@
         </div>
 
         <!-- Highlight Box -->
-        <div id="rahasia" class="lg:col-span-5 bg-white border-2 border-emerald-100 p-8 rounded-3xl shadow-2xl shadow-emerald-950/5 relative overflow-hidden self-stretch flex flex-col justify-center backdrop-blur-md">
+        <div class="lg:col-span-5 bg-white border-2 border-emerald-100 p-8 rounded-3xl shadow-2xl shadow-emerald-950/5 relative overflow-hidden self-stretch flex flex-col justify-center backdrop-blur-md">
             <div class="absolute -right-8 -bottom-8 text-9xl opacity-15 pointer-events-none select-none animate-pulse">🍃</div>
             <h3 class="text-sm uppercase tracking-widest font-extrabold text-emerald-800 mb-4 flex items-center gap-2">
                 ✦ RAHASIA KESEGARAN UTAMA
@@ -123,9 +124,11 @@
             <!-- Grid Katalog Produk -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Varian 1: Original -->
-                <div class="product-card bg-white p-6 rounded-3xl border-2 border-gray-100 shadow-md flex flex-col justify-between hover:shadow-2xl hover:border-emerald-300 group">
+                <div class="product-card bg-white p-5 rounded-3xl border-2 border-gray-100 shadow-md flex flex-col justify-between hover:shadow-2xl hover:border-emerald-300 group">
                     <div>
-                        <div class="text-5xl bg-emerald-50 p-4 rounded-2xl group-hover:scale-110 transition-transform inline-block mb-5 shadow-inner">🍋</div>
+                        <div class="w-full h-44 overflow-hidden rounded-2xl mb-5 shadow-inner bg-emerald-50/50 flex items-center justify-center">
+                            <img src="mojito original.png" alt="Original Manih Sabuik" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                        </div>
                         <h4 class="font-extrabold text-gray-900 text-xl group-hover:text-emerald-700 transition-colors">Original Manih Sabuik</h4>
                         <p class="text-sm text-gray-500 mt-3 leading-relaxed font-medium">Menu signature legendaris dengan kombinasi jeruk nipis lokal melimpah, es kristal, dan kesegaran daun mint murni.</p>
                     </div>
@@ -136,9 +139,11 @@
                 </div>
 
                 <!-- Varian 2: Melon -->
-                <div class="product-card bg-white p-6 rounded-3xl border-2 border-gray-100 shadow-md flex flex-col justify-between hover:shadow-2xl hover:border-emerald-300 group">
+                <div class="product-card bg-white p-5 rounded-3xl border-2 border-gray-100 shadow-md flex flex-col justify-between hover:shadow-2xl hover:border-emerald-300 group">
                     <div>
-                        <div class="text-5xl bg-lime-50 p-4 rounded-2xl group-hover:scale-110 transition-transform inline-block mb-5 shadow-inner">🍈</div>
+                        <div class="w-full h-44 overflow-hidden rounded-2xl mb-5 shadow-inner bg-lime-50/50 flex items-center justify-center">
+                            <img src="mojito melon.png" alt="Mojito Sweet Melon" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                        </div>
                         <h4 class="font-extrabold text-gray-900 text-xl group-hover:text-emerald-700 transition-colors">Mojito Sweet Melon</h4>
                         <p class="text-sm text-gray-500 mt-3 leading-relaxed font-medium">Manisnya buah melon pilihan yang harum berpadu sempurna dinginnya sodaria dan remasan daun mint segar.</p>
                     </div>
@@ -149,9 +154,11 @@
                 </div>
 
                 <!-- Varian 3: Jeruk -->
-                <div class="product-card bg-white p-6 rounded-3xl border-2 border-gray-100 shadow-md flex flex-col justify-between hover:shadow-2xl hover:border-emerald-300 group">
+                <div class="product-card bg-white p-5 rounded-3xl border-2 border-gray-100 shadow-md flex flex-col justify-between hover:shadow-2xl hover:border-emerald-300 group">
                     <div>
-                        <div class="text-5xl bg-amber-50 p-4 rounded-2xl group-hover:scale-110 transition-transform inline-block mb-5 shadow-inner">🍊</div>
+                        <div class="w-full h-44 overflow-hidden rounded-2xl mb-5 shadow-inner bg-amber-50/50 flex items-center justify-center">
+                            <img src="mojito jeruk.png" alt="Mojito Citrus Orange" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                        </div>
                         <h4 class="font-extrabold text-gray-900 text-xl group-hover:text-emerald-700 transition-colors">Mojito Citrus Orange</h4>
                         <p class="text-sm text-gray-500 mt-3 leading-relaxed font-medium">Suntikan energi dari perasan jeruk manis alami yang kaya vitamin C, berpadu pas dengan sensasi dingin mint.</p>
                     </div>
@@ -162,15 +169,63 @@
                 </div>
 
                 <!-- Varian 4: Strawberry Summer -->
-                <div class="product-card bg-white p-6 rounded-3xl border-2 border-gray-100 shadow-md flex flex-col justify-between hover:shadow-2xl hover:border-emerald-300 group">
+                <div class="product-card bg-white p-5 rounded-3xl border-2 border-gray-100 shadow-md flex flex-col justify-between hover:shadow-2xl hover:border-emerald-300 group">
                     <div>
-                        <div class="text-5xl bg-red-50 p-4 rounded-2xl group-hover:scale-110 transition-transform inline-block mb-5 shadow-inner">🍓</div>
+                        <div class="w-full h-44 overflow-hidden rounded-2xl mb-5 shadow-inner bg-red-50/50 flex items-center justify-center">
+                            <img src="mojito stoberi.png" alt="Mojito Strawberry Summer" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                        </div>
                         <h4 class="font-extrabold text-gray-900 text-xl group-hover:text-emerald-700 transition-colors">Mojito Strawberry Summer</h4>
                         <p class="text-sm text-gray-500 mt-3 leading-relaxed font-medium">Sensasi asam manis buah strawberry merah segar yang melimpah berpadu soda dingin dan daun mint.</p>
                     </div>
                     <div class="mt-8 flex justify-between items-center pt-4 border-t border-gray-100">
                         <span class="font-extrabold text-emerald-600 text-xl">Rp 5.000</span>
                         <button onclick="pilihMenu('Mojito Strawberry Summer')" class="bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-bold px-5 py-3 rounded-xl transition-all shadow-md shadow-emerald-600/20 cursor-pointer hover:scale-105">Beli</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROMO SECTION -->
+        <section id="promo" class="scroll-mt-24">
+            <div class="text-center mb-12">
+                <h2 class="font-serif-brand text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">Promo Spesial Manih Sabuik</h2>
+                <p class="text-base text-gray-500 mt-2 font-medium">Pantau terus halaman ini untuk penawaran menarik ter-update!</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Promo 1: Jumat Berkah -->
+                <div class="promo-card bg-emerald-900 text-white p-8 rounded-3xl shadow-xl relative overflow-hidden border-2 border-emerald-700 flex flex-col justify-between">
+                    <div class="absolute right-0 top-0 bg-amber-400 text-emerald-950 font-black text-xs px-4 py-2 rounded-bl-2xl uppercase tracking-wider">
+                        Rutin Mingguan
+                    </div>
+                    <div>
+                        <span class="text-3xl">🕌</span>
+                        <h3 class="font-serif-brand font-extrabold text-2xl mt-4 text-amber-300">Promo Jumat Berkah</h3>
+                        <p class="text-emerald-100/90 text-sm mt-3 leading-relaxed font-medium">
+                            Khusus di **Hari Jumat**, nikmati keberkahan ekstra kesegaran. Setiap pembelian minimal 4 Cup varian apa saja, dapatkan gratis **1 Cup Original Manih Sabuik**! Pas banget buat berbagi bareng teman kantor atau keluarga.
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-emerald-800 flex justify-between items-center">
+                        <span class="text-xs bg-emerald-800 text-emerald-200 px-3 py-1.5 rounded-lg font-bold">Berlaku tiap Jumat</span>
+                        <a href="#produk" class="text-amber-300 hover:text-white text-sm font-bold flex items-center gap-1 transition-colors">Ambil Promo →</a>
+                    </div>
+                </div>
+
+                <!-- Promo 2: Bulanan -->
+                <div class="promo-card bg-white p-8 rounded-3xl shadow-md border-2 border-dashed border-gray-200 flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute right-0 top-0 bg-rose-500 text-white font-black text-xs px-4 py-2 rounded-bl-2xl uppercase tracking-wider">
+                        Promo Juni 2026
+                    </div>
+                    <div>
+                        <span class="text-3xl">🎉</span>
+                        <h3 class="font-serif-brand font-extrabold text-2xl mt-4 text-gray-950">Bundling Tropis Puas</h3>
+                        <p class="text-gray-500 text-sm mt-3 leading-relaxed font-medium">
+                            Spesial bulan ini! Beli kombinasi **1 Melon + 1 Strawberry + 1 Orange**, cukup bayar **Rp 13.500** aja (hemat Rp 1.500). Yuk serbu bareng squad kamu sebelum periodenya habis!
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-gray-100 flex justify-between items-center">
+                        <span class="text-xs bg-gray-100 text-gray-500 px-3 py-1.5 rounded-lg font-bold">Valid s/d Akhir Bulan</span>
+                        <a href="#produk" class="text-emerald-600 hover:text-emerald-700 text-sm font-bold flex items-center gap-1 transition-colors">Ambil Promo →</a>
                     </div>
                 </div>
             </div>
@@ -190,6 +245,12 @@
                     <label class="block text-sm font-bold text-gray-500 uppercase tracking-wider mb-2.5">Nama Lengkap Penerima</label>
                     <input type="text" id="nama" required placeholder="Tulis nama lengkap Anda" 
                         class="w-full px-5 py-4.5 rounded-2xl border-2 border-gray-200 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 focus:outline-none transition-all text-base bg-gray-50/50 font-semibold text-gray-900 placeholder:font-normal">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold text-gray-500 uppercase tracking-wider mb-2.5">Alamat Pengiriman Lengkap</label>
+                    <textarea id="alamat" rows="3" required placeholder="Tulis alamat lengkap pengiriman (Nama jalan, nomor rumah, RT/RW, kelurahan, kecamatan)" 
+                        class="w-full px-5 py-4.5 rounded-2xl border-2 border-gray-200 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 focus:outline-none transition-all resize-none text-base bg-gray-50/50 font-semibold text-gray-900 placeholder:font-normal"></textarea>
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -256,9 +317,8 @@
                 <p class="text-sm text-gray-500 font-medium">Dapatkan info promo menarik setiap minggunya melalui channel resmi kami.</p>
             </div>
             <div class="flex justify-center gap-10">
-                <a href="https://instagram.com/mojitomanihsabuik" target="_blank" class="text-gray-500 hover:text-pink-600 transition-colors text-sm font-bold flex items-center gap-1.5">Instagram</a>
-                <a href="https://tiktok.com/@mojitomanihsabuik" target="_blank" class="text-gray-500 hover:text-black transition-colors text-sm font-bold flex items-center gap-1.5">TikTok</a>
-                <a href="https://facebook.com/mojitomanihsabuik" target="_blank" class="text-gray-500 hover:text-blue-600 transition-colors text-sm font-bold flex items-center gap-1.5">Facebook</a>
+                <a href="https://www.instagram.com/mojitomanih.official?igsh=cmFnYnFmYzIybGRk" target="_blank" class="text-gray-500 hover:text-pink-600 transition-colors text-sm font-bold flex items-center gap-1.5">Instagram</a>
+                <a href="https://api.whatsapp.com/send?phone=6283805344490" target="_blank" class="text-gray-500 hover:text-emerald-600 transition-colors text-sm font-bold flex items-center gap-1.5">WhatsApp</a>
             </div>
             <p class="text-xs text-gray-400 font-bold tracking-wider">
                 &copy; 2026 Es Mojito Manih Sabuik. All Rights Reserved.
@@ -267,10 +327,10 @@
 
     </main>
 
-    <!-- JAVASCRIPT LOGIC (FIXED HARGA SERBA 5000 & NO WHATSAPP) -->
+    <!-- JAVASCRIPT LOGIC -->
     <script>
         const HARGA_FIXED = 5000;
-        const NOMOR_WHATSAPP = "6283805344490"; // Perbaikan: Nomor WhatsApp yang benar & aktif
+        const NOMOR_WHATSAPP = "6283805344490"; 
 
         function pilihMenu(namaMenu) {
             document.getElementById('menuTerpilih').value = namaMenu;
@@ -296,6 +356,7 @@
 
         function kirimWhatsApp() {
             let nama = document.getElementById('nama').value.trim();
+            let alamat = document.getElementById('alamat').value.trim();
             let menu = document.getElementById('menuTerpilih').value;
             let jumlah = document.getElementById('jumlah').value;
             let catatan = document.getElementById('catatan').value.trim();
@@ -307,10 +368,17 @@
                 return;
             }
 
+            if (alamat === "") {
+                alert("Masukkan alamat pengiriman Kakak terlebih dahulu ya.");
+                document.getElementById('alamat').focus();
+                return;
+            }
+
             let teksPesan = `Halo, Admin *Mojito Manih Sabuik*!%0A` +
                             `Saya tertarik memesan menu berikut melalui E-Commerce:%0A%0A` +
                             `*Detail Lengkap Pesanan:*%0A` +
                             `• Nama Pelanggan : ${nama}%0A` +
+                            `• Alamat Kirim : ${alamat}%0A` +
                             `• Varian Rasa : *${menu}*%0A` +
                             `• Jumlah : ${jumlah} Cup%0A`;
             
